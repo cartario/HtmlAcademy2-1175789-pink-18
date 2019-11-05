@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Василий](https://up.htmlacademy.ru/adaptive/18/user/1175789).
-* Наставник: `Неизвестно`.
+* Студент: [Василий Зайков](https://up.htmlacademy.ru/adaptive/18/user/1175789).
+* Наставник: [Дмитрий Железцов](https://up.htmlacademy.ru/adaptive/18/user/983299).
 
 ---
 

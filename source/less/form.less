@@ -3,6 +3,13 @@
 @color-grey: #f2f2f2;
 @color-green: #2aab6d;
 
+.base-form-properties(){
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-pink;
+}
+
 .page-form {
   color: @color-black;
 }
@@ -12,24 +19,14 @@
   text-align: center;
 }
 
-.form__item--name .form__label {
-  font-size: 14px;
+.form__item--name .form__label,
+.form__item--achives .form__legend--achives {
+  .base-form-properties;
   line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: @color-pink;
 }
 
 .form__item--achives {
   background-color: @color-grey;
-}
-
-.form__item--achives .form__legend--achives{
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: @color-pink;
 }
 
 .form__label--checkbox {
@@ -40,31 +37,18 @@
 }
 
 .form__item--contacts .form__label--input{
-  font-size: 14px;
-  line-height: 30px;
+  .base-form-properties;
   text-align: left;
-  text-transform: uppercase;
-  color: @color-pink;
 }
 
 .form__item--expirience {
   background-color: @color-grey;
 }
 
-.form__item--expirience .form__legend--expirience {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  color: @color-pink;
-}
-
+.form__item--expirience .form__legend--expirience,
 .form__item--feedback .form__label--textarea {
-  font-size: 14px;
+  .base-form-properties;
   line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  color: @color-pink;
 }
 
 .form__button {
@@ -89,5 +73,3 @@
 .form__required span {
   color: @color-pink;
 }
-
-

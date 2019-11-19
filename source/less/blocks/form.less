@@ -1,0 +1,75 @@
+@color-black: #283645;
+@color-pink: #d22856;
+@color-grey: #f2f2f2;
+@color-green: #2aab6d;
+
+.base-form-properties() {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-pink;
+}
+
+.page-form {
+  color: @color-black;
+}
+
+.form__offer {
+  font-size: 14px;
+  text-align: center;
+}
+
+.form__item--name .form__label,
+.form__item--achives .form__legend--achives {
+  .base-form-properties;
+  line-height: 18px;
+}
+
+.form__item--achives {
+  background-color: @color-grey;
+}
+
+.form__label--checkbox {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: @color-black;
+}
+
+.form__item--contacts .form__label--input {
+  .base-form-properties;
+  text-align: left;
+}
+
+.form__item--expirience {
+  background-color: @color-grey;
+}
+
+.form__item--expirience .form__legend--expirience,
+.form__item--feedback .form__label--textarea {
+  .base-form-properties;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 276px;
+  height: 59px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid @color-green;
+  color: white;
+  background-color: @color-green;
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-black;
+}
+
+.form__required span {
+  color: @color-pink;
+}

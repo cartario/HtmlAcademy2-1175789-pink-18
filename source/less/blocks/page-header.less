@@ -35,11 +35,29 @@ img {
   .outline4();
 }
 
+.bg-mock--inner {
+  min-height: 170px;
+  background-position: 50% 20%;
+}
+
+.bg-mock__text {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
 @media (min-width: @tablet-width) {
   .bg-mock {
     width: 660px;
     min-height: 610px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+  }
+  .bg-mock--inner {
+    min-height: 330px;
+    background-position: 50% 30%;
+  }
+  .bg-mock__text {
+    font-size: 50px;
   }
 }
 
@@ -48,5 +66,8 @@ img {
     width: 960px;
     min-height: 610px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+  }
+  .bg-mock--inner {
+    min-height: 285px;
   }
 }

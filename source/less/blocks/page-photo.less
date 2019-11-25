@@ -17,16 +17,17 @@
   .outline3();
 }
 
-.gallery__list {
+.gallery__list-wrapper {
   width: 100%;
   margin: 0 auto;
-  .reset-list ();
+
 }
 
-.gallery__list-wrapper {
+.gallery__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  .reset-list ();
 }
 
 .gallery__item {
@@ -67,7 +68,7 @@
     font-size: 18px;
   }
 
-  .gallery__list-wrapper {
+  .gallery__list {
     flex-direction: row;
     justify-content: space-around;
   }

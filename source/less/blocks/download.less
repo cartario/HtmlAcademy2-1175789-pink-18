@@ -1,8 +1,25 @@
-@pink-blue: #1d2631;
-
 .download {
+  width: 320px;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 389px;
+  margin: 0 auto;
   color: white;
-  background-color: @pink-blue;
+  .outline1();
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 660px;
+    margin-top: -500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    width: 960px;
+    margin-top: -500px;
+  }
 }
 
 .download a {
@@ -20,7 +37,7 @@
 
 .button--download {
   font-weight: bold;
-  background-color: @pink-blue;
+  background-color: @color-blue;
   color: white;
 }
 
@@ -30,4 +47,8 @@
   font-size: 14px;
   line-height: 1.71;
   font-weight: 300;
+}
+
+.download-list {
+  .reset-list();
 }

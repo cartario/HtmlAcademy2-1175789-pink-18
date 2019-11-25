@@ -1,8 +1,3 @@
-@color-black: #283645;
-@color-pink: #d22856;
-@color-grey: #f2f2f2;
-@color-green: #2aab6d;
-
 .base-form-properties() {
   font-size: 14px;
   text-align: center;
@@ -73,4 +68,22 @@
 
 .form__required span {
   color: @color-pink;
+}
+
+.bg-mock-form1 {
+  min-height: 3370px;
+  background-color: red;
+  opacity: 0.2;
+}
+
+@media (min-width: @tablet-width) {
+  .bg-mock-form1 {
+    min-height: 3030px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bg-mock-form1 {
+    min-height: 2770px;
+  }
 }

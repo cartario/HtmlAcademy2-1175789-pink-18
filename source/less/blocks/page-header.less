@@ -1,10 +1,76 @@
-.page-header {
-  text-weight: bold;
+body {
+  min-width: 320px;
+  height: 2500px;
+  margin: 0;
+  padding: 0;
   color: white;
-  background-color: #1d2631;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: @color-blue;
+  background-repeat: no-repeat;
+  background-position: 50% -15%;
+  background-image: url("../img/Pink-Photo-Mobile.png");
 }
 
-.page-header a {
-  color: white;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background-image: url("../img/Pink-Photo-Tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background-image: url("../img/Pink-Photo-Desktop.png");
+  }
+}
+
+.bg-mock {
+  width: 320px;
+  min-height: 395px;
+  margin: 0 auto;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  .outline4();
+}
+
+.bg-mock--inner {
+  min-height: 170px;
+  background-position: 50% 20%;
+}
+
+.bg-mock__text {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .bg-mock {
+    width: 660px;
+    min-height: 610px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+  }
+
+  .bg-mock--inner {
+    min-height: 330px;
+    background-position: 50% 30%;
+  }
+
+  .bg-mock__text {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bg-mock {
+    width: 960px;
+    min-height: 610px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+  }
+
+  .bg-mock--inner {
+    min-height: 285px;
+  }
 }

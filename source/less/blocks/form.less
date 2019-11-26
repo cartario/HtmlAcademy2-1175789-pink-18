@@ -14,14 +14,61 @@
   text-align: center;
 }
 
+.form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 660px;
+    min-height: 2430px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 960px;
+    min-height: 1460px;
+  }
+}
+
+
 .form__item--name .form__label,
 .form__item--achives .form__legend--achives {
   .base-form-properties;
   line-height: 18px;
 }
 
+.form__offer {
+  min-height: 150px;
+  .reset-list();
+  .outline1();
+}
+
+.form__item--name {
+  min-height: 370px;
+  .outline4();
+}
+
 .form__item--achives {
-  background-color: @color-grey;
+  min-height: 600px;
+  .outline1();
+}
+
+.form__item--contacts {
+  min-height: 250px;
+  .outline3();
+}
+
+.form__item--expirience {
+  min-height: 320px;
+  .outline1();
+}
+
+.form__item--feedback {
+  min-height: 440px;
+  .outline4();
 }
 
 .form__label--checkbox {
@@ -34,10 +81,6 @@
 .form__item--contacts .form__label--input {
   .base-form-properties;
   text-align: left;
-}
-
-.form__item--expirience {
-  background-color: @color-grey;
 }
 
 .form__item--expirience .form__legend--expirience,
@@ -68,22 +111,4 @@
 
 .form__required span {
   color: @color-pink;
-}
-
-.bg-mock-form1 {
-  min-height: 3370px;
-  background-color: red;
-  opacity: 0.2;
-}
-
-@media (min-width: @tablet-width) {
-  .bg-mock-form1 {
-    min-height: 3030px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .bg-mock-form1 {
-    min-height: 2770px;
-  }
 }

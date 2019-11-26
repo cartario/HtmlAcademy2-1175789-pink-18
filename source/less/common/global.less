@@ -1,7 +1,29 @@
 body {
+  min-width: 320px;
+  height: 4500px;
+  margin: 0;
+  padding: 0;
   font-family: "OpenSans-Light", "Arial", sans-serif;
+  color: white;
+  background-color: @color-blue;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-image: url("../img/Pink-Index-Mobile.png");
 }
 
 .advantages__header {
   font-family: "OpenSans-Bold", "Arial", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background-image: url("../img/Pink-Form-Tablet.png");
+    background-position: 50% 00%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background-image: url("../img/Pink-Index-Desktop.png");
+  }
 }

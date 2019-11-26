@@ -1,5 +1,22 @@
 .posting {
-  background-color: @color-grey;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 780px;
+  .outline3();
+}
+
+@media (min-width: @tablet-width) {
+  .posting {
+    width: 660px;
+    min-height: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .posting {
+    width: 960px;
+    min-height: 670px;
+  }
 }
 
 .posting .button {

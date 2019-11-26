@@ -1,3 +1,58 @@
+.feedback {
+  width: 320px;
+  min-height: 350px;
+  margin: 0 auto;
+  .outline1();
+}
+
+.products {
+  width: 320px;
+  min-height: 450px;
+  margin: 0 auto;
+  .outline3();
+}
+
+.contacts {
+  width: 320px;
+  min-height: 600px;
+  margin: 0 auto;
+  .outline4();
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    width: 660px;
+    min-height: 300px;
+  }
+
+  .products {
+    width: 660px;
+    min-height: 300px;
+  }
+
+  .contacts {
+    width: 660px;
+    min-height: 650px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    width: 960px;
+    min-height: 430px;
+  }
+
+  .products {
+    width: 960px;
+    min-height: 300px;
+  }
+
+  .contacts {
+    width: 960px;
+    min-height: 700px;
+  }
+}
+
 .feedback__text {
   font-size: 14px;
   line-height: 2.14;

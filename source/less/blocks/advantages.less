@@ -18,23 +18,33 @@
 
   &__header {
     padding: 20px;
-    .outline4();
     background-color: white;
+
+    p {
+      font-size: 24px;
+      font-weight: normal;
+    }
   }
 
   &-list {
-    min-height: 600px;
+    background-color: @color-grey;
     .reset-list();
   }
 
   &-list__item {
     padding: 20px;
-    .outline2();
+  }
+
+  &-list__slogan {
+    font-size: 18px;
+  }
+
+  &-list__intro {
+    font-size: 14px;
   }
 
   &__img {
     margin: 0 auto;
-    .outline1();
   }
 }
 

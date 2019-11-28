@@ -5,7 +5,7 @@
   min-height: 389px;
   margin: 0 auto;
   color: white;
-  .outline1();
+  background-color: @color-black;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,4 +51,24 @@
 
 .download-list {
   .reset-list();
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.download-list__item {
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.download-list li:nth-child(1) {
+  background: url("../img/apple-logo-svg.png") no-repeat;
+}
+
+.download-list li:nth-child(2) {
+  background: url("../img/android-logo-svg.png") no-repeat;
+}
+
+.download-list li:nth-child(3) {
+  background: url("../img/microsoft-logo-svg.png") no-repeat;
 }

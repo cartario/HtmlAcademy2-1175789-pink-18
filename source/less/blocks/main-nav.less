@@ -6,7 +6,6 @@
 .main-nav {
   position: relative;
   width: 320px;
-  min-height: 325px;
   margin: 0 auto;
   background-color: @color-black;
 }
@@ -30,14 +29,19 @@
   top: 20px;
   right: 9px;
   width: 52px;
-  height: 2px;
+  height: 4px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @color-pink;
+  box-shadow: 0 10px 0 0 @color-pink, 0 20px 0 0 @color-pink;
+}
+
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #ff0000;
-  box-shadow: 0 10px 0 0 rgba #ff0000, 0 20px 0 0 #ff0000;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -45,10 +49,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 9px;
-    width: 52px;
-    height: 2px;
+    top: 35px;
+    right: 10px;
+    width: 34px;
+    height: 4px;
     background-color: #ffffff;
   }
 
@@ -58,6 +62,16 @@
 
   &::before {
     transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: @color-pink;
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -82,17 +96,46 @@
   padding: 20px;
   min-height: 70px;
   box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav--closed .site-logo {
+  border: none;
 }
 
 .site-list {
-  min-height: 250px;
-
-  &__item {
-    min-height: 63px;
-    padding: 10px;
+  a {
+    display: block;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
-    box-sizing: border-box;
+    color: white;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
   }
+
+  a[href] {
+    &:hover {
+      color: @color-pink;
+    }
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {

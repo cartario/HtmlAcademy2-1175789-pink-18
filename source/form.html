@@ -7,7 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav nav-mock">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="site-logo">
             <li class="site-logo__item">
@@ -84,5 +87,22 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      var navMain=document.querySelector('.main-nav');
+      var navToggle=document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function(){
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      }
+      else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+      });
+    </script>
   </body>
 </html>

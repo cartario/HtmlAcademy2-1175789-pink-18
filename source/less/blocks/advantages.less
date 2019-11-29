@@ -51,6 +51,11 @@
 @media (min-width: @tablet-width) {
   .advantages {
     width: 660px;
+
+    &__img {
+      width: 268px;
+      height: 100%;
+    }
   }
 
   .advantages__wrapper {
@@ -61,6 +66,13 @@
 
   .advantages__header {
     width: 100%;
+
+    p {
+      margin: 5px;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
   }
 
   .advantages-list {
@@ -70,8 +82,19 @@
 
   .advantages__investigation {
     display: block;
-    width: 100%;
     order: 3;
+    padding: 15px;
+    background: url("../img/timer-svg.png") no-repeat;
+    background-color: white;
+
+    a {
+      color: @color-pink;
+    }
+
+    .advantages__investigation__wrapper {
+      width: 50%;
+      margin-left: 50%;
+    }
   }
 }
 

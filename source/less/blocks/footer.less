@@ -3,9 +3,11 @@
 }
 
 .footer {
+  display: none;
   width: 320px;
   min-height: 285px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .footer__logo,
@@ -21,7 +23,8 @@
 
 .logo-footer {
   min-height: 110px;
-  .outline2();
+  padding: 15px;
+  background: url("../img/logotype-blue-tablet-svg.png") no-repeat 50% 0%;
 }
 
 .social {
@@ -36,6 +39,7 @@
 
 @media (min-width: @tablet-width) {
   .footer {
+    display: block;
     width: 660px;
     min-height: 125px;
   }
@@ -49,7 +53,7 @@
   }
 
   .logo-footer {
-    width: 190px;
+    width: 250px;
   }
 
   .social {
@@ -63,6 +67,7 @@
 
 @media (min-width: @desktop-width) {
   .footer {
+    display: block;
     width: 960px;
     min-height: 100px;
   }

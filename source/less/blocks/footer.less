@@ -18,23 +18,56 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 110px;
-  padding: 15px;
-  background: url("../img/logotype-blue-tablet-svg.png") no-repeat 50% 0%;
+
+  &__item:hover path {
+    fill: @color-pink;
+  }
+
+  &__item:active {
+    opacity: 0.3;
+  }
 }
 
-.social {
-  min-height: 60px;
-  .outline5();
+.social__list {
+  display: flex;
+  width: 180px;
+  min-height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.copyright {
-  min-height: 80px;
-  .outline4();
+.social__item {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border: 3px solid @color-grey;
+  border-radius: 50%;
+
+  svg {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  path {
+    fill: @color-pink;
+  }
+
+  &:hover {
+    border: 3px solid @color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -50,18 +83,6 @@
 
   .bg-mock-photo1 {
     min-height: 670px;
-  }
-
-  .logo-footer {
-    width: 250px;
-  }
-
-  .social {
-    width: 250px;
-  }
-
-  .copyright {
-    width: 180px;
   }
 }
 

@@ -1,10 +1,30 @@
 .copyright {
-  padding: 15px;
-  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
   color: @color-black;
-}
 
-.copyright__logo {
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
+  a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  path {
+    fill: @color-pink;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    path {
+      fill: @color-black;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

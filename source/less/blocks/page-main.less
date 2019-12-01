@@ -7,7 +7,7 @@ h2 {
   background-color: @color-grey;
 
   &__value {
-    width: 30%;
+    width: 25%;
   }
 
   &__text {
@@ -56,4 +56,12 @@ h2 {
 
 .products__item td {
   border: 3px @color-grey solid;
+}
+
+@media (max-width: 659px) {
+  .products__item td:nth-child(2),
+  .products__item td:nth-child(4) {
+    display: none;
+    background-color: red;
+  }
 }

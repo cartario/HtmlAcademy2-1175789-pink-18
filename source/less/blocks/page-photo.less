@@ -104,3 +104,34 @@
 .gallery__link {
   color: @color-link;
 }
+
+.posting__tools,
+.tools {
+  .reset-list();
+}
+
+.posting__image {
+  width: 100%;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tools__item {
+  width: 44px;
+  height: 44px;
+}
+
+.tools__item:nth-child(1) {
+  background: url("../img/crop-svg.png");
+}
+
+.tools__item:nth-child(2) {
+  background: url("../img/fill-svg.png");
+}
+
+.tools__item:nth-child(3) {
+  background: url("../img/fill-svg.png");
+}

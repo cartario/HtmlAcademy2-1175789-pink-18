@@ -1,14 +1,21 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .bg-mock {
+  position: relative;
   width: 320px;
   min-height: 395px;
   margin: 0 auto;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
-  .outline4();
+
+  &__slogan {
+    margin: 0;
+    padding: 20px 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.bg__img {
+  position: absolute;
+  bottom: 0;
 }
 
 .bg-mock--inner {
@@ -24,9 +31,7 @@ img {
 
 @media (min-width: @tablet-width) {
   .bg-mock {
-    width: 660px;
-    min-height: 610px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    display: none;
   }
 
   .bg-mock--inner {
@@ -48,5 +53,21 @@ img {
 
   .bg-mock--inner {
     min-height: 285px;
+  }
+}
+
+.page-header__logo {
+  cursor: pointer;
+}
+
+.page-header__logo g {
+  fill: white;
+
+  &:hover {
+    fill: @color-pink;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }

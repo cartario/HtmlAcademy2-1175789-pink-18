@@ -1,8 +1,35 @@
 .feedback {
   width: 320px;
-  min-height: 350px;
   margin: 0 auto;
-  .outline1();
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  color: @color-black;
+  background-color: white;
+
+  &__author {
+    font-weight: bold;
+  }
+
+  &__profession {
+    font-size: 60%;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  &__list {
+    .reset-list ();
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .products {
@@ -16,6 +43,19 @@
   .feedback {
     width: 660px;
     min-height: 300px;
+
+    &__text {
+      order: 1;
+      font-size: 18px;
+    }
+
+    &__author {
+      order: 2;
+    }
+
+    &__profession {
+      order: 3;
+    }
   }
 
   .products {
@@ -44,9 +84,4 @@
     width: 960px;
     min-height: 700px;
   }
-}
-
-.feedback__text {
-  font-size: 14px;
-  line-height: 2.14;
 }

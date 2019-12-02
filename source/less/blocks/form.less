@@ -42,18 +42,160 @@
 
 .form__item--achives {
   background-color: @color-grey;
+  border: none;
+}
+
+.achives__list {
+  .reset-list();
+}
+
+.form__item--contacts {
+  line-height: 40px;
+  border: none;
 }
 
 .form__item--expirience {
-  width: 100%;
   margin: 0;
   padding: 0;
   background-color: @color-grey;
   color: @color-black;
+  border: none;
 }
 
 .form__legend--expirience {
   width: 90%;
+}
+
+.expirience__list {
+  .reset-list();
+}
+
+.expirience__item {
+  position: relative;
+  margin-left: 15px;
+  padding: 35px;
+  font-size: 18px;
+}
+
+.form__label--radio {
+  margin-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: 44%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid @color-pink;
+    border-radius: 50%;
+    background-color: @color-pink;
+  }
+}
+
+.form__item--name .form__label,
+.form__item--achives .form__legend--achives {
+  .base-form-properties;
+  line-height: 40px;
+}
+
+.achives__item {
+  position: relative;
+  padding: 30px 20px 30px 60px;
+}
+
+.form__label--checkbox {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: bold;
+  color: @color-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 48%;
+    width: 20px;
+    height: 10px;
+    border-left: 3px solid @color-pink;
+    border-bottom: 3px solid @color-pink;
+    transform: rotate(-45deg);
+  }
+}
+
+.form__label--input {
+  .base-form-properties;
+  text-align: left;
+}
+
+.form__item--expirience .form__legend--expirience,
+.form__item--feedback .form__label--textarea {
+  .base-form-properties;
+  line-height: 30px;
+}
+
+.form__button {
+  margin: 15%;
+  width: 276px;
+  height: 59px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid @color-green;
+  color: white;
+  background-color: @color-green;
+}
+
+.form__required {
+  margin: -1px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-black;
+}
+
+.form__required span {
+  color: @color-pink;
+}
+
+.form__item--feedback {
+  border: none;
+
+  textarea {
+    width: 95%;
+    height: 200px;
+    font-size: 18px;
+    font-family: "OpenSans-light", "Arial", sans-serif;
+  }
+}
+
+.form__label--textarea {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -66,9 +208,22 @@
     font-size: 18px;
   }
 
+  .form__item {
+    margin: 20px;
+    background-color: white;
+  }
+
   .form__item--name input {
     width: 70%;
-    margin: 30px 55px;
+    margin: 30px 50px;
+  }
+
+  .form__item--achives {
+    border: 2px solid #e5e5e5;
+  }
+
+  .achives__item {
+    margin-left: 60px;
   }
 }
 
@@ -93,52 +248,4 @@
   .form__item--achives {
     width: 45%;
   }
-}
-
-.form__item--name .form__label,
-.form__item--achives .form__legend--achives {
-  .base-form-properties;
-  line-height: 40px;
-}
-
-.form__label--checkbox {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-  color: @color-black;
-}
-
-.form__item--contacts .form__label--input {
-  .base-form-properties;
-  text-align: left;
-}
-
-.form__item--expirience .form__legend--expirience,
-.form__item--feedback .form__label--textarea {
-  .base-form-properties;
-  line-height: 30px;
-}
-
-.form__button {
-  width: 276px;
-  height: 59px;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid @color-green;
-  color: white;
-  background-color: @color-green;
-}
-
-.form__required {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  color: @color-black;
-}
-
-.form__required span {
-  color: @color-pink;
 }

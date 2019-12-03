@@ -50,8 +50,18 @@
 }
 
 .form__item--contacts {
+  .reset-list();
+  margin: 20px;
   line-height: 40px;
   border: none;
+
+  ul {
+    .reset-list();
+  }
+
+  legend {
+    display: none;
+  }
 }
 
 .form__item--expirience {
@@ -106,7 +116,9 @@
 }
 
 .form__item--name .form__label,
-.form__item--achives .form__legend--achives {
+.form__item--achives .form__legend--achives,
+.form__legend--contacts,
+.form__legend--feedback {
   .base-form-properties;
   line-height: 40px;
 }
@@ -158,9 +170,10 @@
 }
 
 .form__button {
-  margin: 15%;
-  width: 276px;
+  display: block;
+  width: 274px;
   height: 59px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -201,6 +214,23 @@
 @media (min-width: @tablet-width) {
   .form {
     width: 660px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 20px;
+      order: 4;
+    }
+
+    &__button {
+      margin: 0;
+      width: 296px;
+    }
   }
 
   .form__offer {
@@ -213,13 +243,67 @@
     background-color: white;
   }
 
+  .form__item--name {
+    width: 90%;
+    order: -1;
+  }
+
+  .form__item--expirience {
+    order: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .expirience__item {
+    margin-left: 60px;
+  }
+
   .form__item--name input {
     width: 70%;
     margin: 30px 50px;
   }
 
   .form__item--achives {
+    padding: 0;
     border: 2px solid #e5e5e5;
+    order: 2;
+  }
+
+  .form__item--contacts {
+    margin: 20px;
+    padding: 20px 60px;
+    border: 2px solid #e5e5e5;
+    order: 1;
+
+    legend {
+      display: block;
+    }
+
+    li {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 59px;
+        height: 59px;
+        background-color: #e5e5e5;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 50% 50%;
+      }
+
+      &:nth-child(2)::before {
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+
+  .form__item--feedback {
+    border: 2px solid #e5e5e5;
+    order: 3;
   }
 
   .achives__item {

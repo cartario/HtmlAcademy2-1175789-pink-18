@@ -318,18 +318,29 @@
 
   .form__wrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
+
+  .form__item {
+    width: 100%;
+  }
+
+  .form__item--expirience {
+    width: 40%;
+  }
+
+  .form__buttons {
+    width: 100%;
+  }
+
   .form__item--name {
-    width: 50%;
+    width: 40%;
 
     input {
       margin-left: 10px;
     }
-  }
-
-  .form__item--achives {
-    width: 45%;
   }
 }

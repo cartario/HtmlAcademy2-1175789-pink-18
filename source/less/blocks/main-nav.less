@@ -109,17 +109,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-logo {
-    margin-left: 100px;
-  }
-
   .site-logo__item {
     margin-top: 25px;
   }
 
   .site-list {
-    margin-right: 80px;
-
     &__item {
       &--active {
         border-bottom: 3px solid white;
@@ -135,8 +129,11 @@
 }
 
 .main-nav__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .site-logo {
@@ -169,6 +166,10 @@
     margin: 0 auto;
   }
 
+  .main-nav__wrapper {
+    width: 660px;
+  }
+
   .site-logo {
     min-height: 110px;
   }
@@ -187,6 +188,7 @@
   .main-nav__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    width: 960px;
   }
 
   .main-nav__toggle {

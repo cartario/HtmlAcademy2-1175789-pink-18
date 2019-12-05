@@ -15,36 +15,70 @@
   }
 }
 
+.download-list {
+  .reset-list();
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin: 30px auto;
+}
+
+.download-list__item {
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.download__description {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.71;
+  font-weight: 300;
+}
+
 @media (min-width: @tablet-width) {
   .download {
     position: relative;
     width: 100%;
-    background: url("../img/bg-back-tablet@1x.jpg") 50% 0;
+    background:
+      url("../img/iphone-hand-tablet@1x.png") no-repeat 40% 100px,
+      url("../img/bg-back-tablet@1x.jpg") 50% 100%;
 
     &-list {
-      width: 300px;
+      margin: 45px 60px 30px 60px;
     }
 
     &__slogan {
       display: block;
       width: 190px;
+      margin-left: 75px;
       font-size: 40px;
-      line-height: 45px;
+      line-height: 1.2;
       font-weight: normal;
       text-align: center;
     }
 
     &__wrapper {
+      position: relative;
       width: 660px;
+      min-height: 540px;
       margin: 0 auto;
+      padding-top: 40px;
     }
 
-    &__img {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      display: block;
-      width: 300px;
+    .button {
+      width: 46%;
+      margin-left: 15px;
+      background-color: transparent;
+    }
+
+    &__description {
+      width: 295px;
+      margin-left: 20px;
+      font-size: 18px;
+      line-height: 1.4;
     }
   }
 }
@@ -93,27 +127,4 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
-}
-
-.download__description {
-  display: block;
-  width: 240px;
-  margin: 0 auto;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.71;
-  font-weight: 300;
-}
-
-.download-list {
-  .reset-list();
-  display: flex;
-  justify-content: space-between;
-  width: 230px;
-  margin: 30px auto;
-}
-
-.download-list__item {
-  min-width: 60px;
-  min-height: 60px;
 }

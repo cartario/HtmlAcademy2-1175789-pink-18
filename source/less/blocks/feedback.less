@@ -13,12 +13,15 @@
   }
 
   &__profession {
+    display: none;
     font-size: 60%;
   }
 
   &__text {
+    margin: 5px;
     font-size: 14px;
     line-height: 2.14;
+    font-weight: bold;
   }
 
   &__list {
@@ -30,13 +33,10 @@
     flex-direction: column;
     margin: 0;
   }
-}
 
-.products {
-  width: 320px;
-  min-height: 450px;
-  margin: 0 auto;
-  .outline3();
+  &__toggles {
+    margin-bottom: 50px; /*временно*/
+  }
 }
 
 @media (min-width: @tablet-width) {

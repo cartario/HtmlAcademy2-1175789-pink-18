@@ -1,14 +1,15 @@
 .contacts {
   width: 320px;
-  min-height: 650px;
+  min-height: 620px;
   margin: 0 auto;
   text-align: center;
   background: url("../img/bg-map-mobile@1x.png") no-repeat 50% 100%;
 
   &__title {
     margin: 0;
-    padding: 40px;
+    padding: 40px 40px 30px 40px;
     font-size: 24px;
+    line-height: 1.2;
     font-weight: normal;
     color: @color-black;
     background-color: white;
@@ -25,11 +26,16 @@
   }
 
   &__text {
-    margin: 0;
+    width: 237px;
+    margin: 0 auto;
     padding: 0;
     font-size: 24px;
-    font-weight: normal;
+    line-height: 1.2;
     color: @color-pink;
+  }
+
+  &__item:last-child p {
+    margin-bottom: 40px; /*временно*/
   }
 
   &__list {

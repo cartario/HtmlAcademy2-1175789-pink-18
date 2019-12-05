@@ -47,6 +47,16 @@
 @media (min-width: @tablet-width) {
   .contacts {
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 35%;
+
+    &__title {
+      padding: 45px;
+      padding-bottom: 35px;
+      font-size: 40px;
+    }
+
+    &__text {
+      padding-top: 5px;
+    }
   }
 
   .contacts__list {
@@ -58,6 +68,10 @@
     flex-grow: 1;
     width: 50%;
     box-sizing: border-box;
+  }
+
+  .contacts__list li:nth-child(3) {
+    margin-top: 25px;
   }
 }
 

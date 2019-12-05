@@ -1,7 +1,3 @@
-h2 {
-  background: none;
-}
-
 .products {
   width: 320px;
   min-height: 450px;
@@ -90,5 +86,56 @@ h2 {
   .products__item td:nth-child(4) {
     display: none;
     background-color: red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products {
+    width: 660px;
+    min-height: auto;
+
+    &__value {
+      width: 150px;
+    }
+
+    &__item {
+      width: auto;
+      margin-left: 19px;
+    }
+
+    &__list {
+      padding-top: 35px;
+      padding-bottom: 70px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__text {
+      padding-left: 10px;
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__price {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    &__toggles {
+      display: none;
+    }
+
+    tr {
+      height: 45px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    width: 960px;
+    min-height: 300px;
   }
 }

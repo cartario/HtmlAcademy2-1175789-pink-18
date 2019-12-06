@@ -113,17 +113,24 @@
     margin-top: 25px;
   }
 
-  .site-list {
-    &__item {
-      &--active {
-        border-bottom: 3px solid white;
-      }
-    }
+  .site-list__item {
+    position: relative;
+  }
+
+  .site-list__item--active::after {
+    position: absolute;
+    content: "";
+    top: 70%;
+    width: 80px;
+    height: 2px;
+    background: white;
   }
 
   .site-list a {
     padding: 48px 0;
     font-weight: normal;
+    text-transform: none;
+    text-align: left;
     border-bottom: none;
   }
 }

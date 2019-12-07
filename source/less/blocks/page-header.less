@@ -25,8 +25,25 @@
 
 .bg-mock__text {
   margin: 0;
-  padding: 20px;
+  padding: 25px;
+  font-size: 24px;
   text-align: center;
+}
+
+.page-header__logo {
+  cursor: pointer;
+}
+
+.page-header__logo g {
+  fill: white;
+
+  &:hover {
+    fill: @color-pink;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -53,21 +70,5 @@
 
   .bg-mock--inner {
     min-height: 285px;
-  }
-}
-
-.page-header__logo {
-  cursor: pointer;
-}
-
-.page-header__logo g {
-  fill: white;
-
-  &:hover {
-    fill: @color-pink;
-  }
-
-  &:active {
-    fill: rgba(255, 255, 255, 0.3);
   }
 }

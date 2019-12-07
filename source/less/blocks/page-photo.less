@@ -6,7 +6,7 @@
     width: 320px;
     min-height: 140px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 45px 41px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 30px;
@@ -34,12 +34,21 @@
 
 .gallery__item {
   min-height: 350px;
+  padding: 25px;
+  box-sizing: border-box;
   color: @color-black;
   background-color: @color-grey;
 }
 
 .gallery__item--hit {
   width: 100%;
+  padding: 0;
+
+  b,
+  p,
+  a {
+    padding-left: 25px;
+  }
 }
 
 @media (min-width: @tablet-width) {

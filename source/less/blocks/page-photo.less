@@ -57,6 +57,11 @@
   }
 }
 
+.gallery__tablet,
+.gallery__desktop {
+  display: none;
+}
+
 .gallery__list {
   display: flex;
   flex-direction: column;
@@ -105,10 +110,22 @@
     width: 660px;
   }
 
+  .gallery__mobile {
+    display: none;
+  }
+
+  .gallery__article {
+    padding: 20px;
+  }
+
+  .gallery__tablet {
+    display: inline;
+  }
+
   .gallery__item {
     width: 300px;
     margin-bottom: 30px;
-    min-height: 470px;
+    padding: 0;
   }
 
   .gallery__item--hit {
@@ -136,6 +153,14 @@
 
   .gallery {
     width: 960px;
+  }
+
+  .gallery__tablet {
+    display: none;
+  }
+
+  .gallery__desktop {
+    display: inline;
   }
 
   .gallery__intro {

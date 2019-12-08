@@ -53,8 +53,9 @@
         <div class="gallery__list-wrapper">
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--hit">
-            <img class="gallery__image gallery__image--hit" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="gallery-image">
-
+              <img class="gallery__image gallery__image--hit gallery__mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="gallery-image">
+              <img class="gallery__image gallery__image--hit gallery__tablet" src="img/panorama-tablet@1x.jpg">
+              <img class="gallery__image gallery__image--hit gallery__desktop" src="img/panorama-desktop@1x.jpg">
             <b class="gallery__name">
               Анна
             </b>
@@ -70,94 +71,130 @@
             </a>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="gallery-image">
-            <b class="gallery__name">
-              Левон
-            </b>
-            <span class="gallery__time">
-              (5 часов назад)
-            </span>
-            <p class="gallery__description">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12" alt="gallery-like"> Нравится: 356
-            </a>
+            <picture>
+              <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Левон
+              </b>
+              <span class="gallery__time">
+                (5 часов назад)
+              </span>
+              <p class="gallery__description">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12" alt="gallery-like"> Нравится: 356
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
-            <b class="gallery__name">
-              Антон
-            </b>
-            <span class="gallery__time">
-              (12 часов назад)
-            </span>
-            <p class="gallery__description">
-              Соседи будут рады!
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 666
-            </a>
+            <picture>
+              <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Антон
+              </b>
+              <span class="gallery__time">
+                (12 часов назад)
+              </span>
+              <p class="gallery__description">
+                Соседи будут рады!
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 666
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-window-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
-            <b class="gallery__name">
-              Борис
-            </b>
-            <span class="gallery__time">
-              (20 часов назад)
-            </span>
-            <p class="gallery__description">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 215
-            </a>
+            <picture>
+              <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Борис
+              </b>
+              <span class="gallery__time">
+                (20 часов назад)
+              </span>
+              <p class="gallery__description">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 215
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
-            <b class="gallery__name">
-              Сергей
-            </b>
-            <span class="gallery__time">
-              (25 часов назад)
-            </span>
-            <p class="gallery__description">
-              Самая кубанская в Мире!
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 4
-            </a>
+            <picture>
+              <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Сергей
+              </b>
+              <span class="gallery__time">
+                (25 часов назад)
+              </span>
+              <p class="gallery__description">
+                Самая кубанская в Мире!
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 4
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
-            <b class="gallery__name">
-              Максим
-            </b>
-            <span class="gallery__time">
-              (40 часов назад)
-            </span>
-            <p class="gallery__description">
-              Где снег-то?
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 150
-            </a>
+            <picture>
+              <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Максим
+              </b>
+              <span class="gallery__time">
+                (40 часов назад)
+              </span>
+              <p class="gallery__description">
+                Где снег-то?
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 150
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
-            <b class="gallery__name">
-              Надежда
-            </b>
-            <span class="gallery__time">
-              (45 часов назад)
-            </span>
-            <p class="gallery__description">
-              Всем GM и взаимные лайки!
-            </p>
-            <a class="gallery__link" href="#">
-              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 2560
-            </a>
+            <picture>
+              <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg"  width="280" height="180" alt="gallery-image">
+            </picture>
+            <article class="gallery__article">
+              <b class="gallery__name">
+                Надежда
+              </b>
+              <span class="gallery__time">
+                (45 часов назад)
+              </span>
+              <p class="gallery__description">
+                Всем GM и взаимные лайки!
+              </p>
+              <a class="gallery__link" href="#">
+                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12 alt="gallery-like"> Нравится: 2560
+              </a>
+            </article>
           </li>
         </ul>
         </div>
@@ -166,29 +203,34 @@
         <div class="posting__wrapper">
           <h2 class="visually-hidden">Публикация</h2>
         <p class="posting__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="posting__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="publication-photo">
-        <ul class="posting___tools tools">
-          <li class="tools__item">
-          </li>
-          <li class="tools__item">
-          </li>
-          <li class="tools__item">
-          </li>
-          <li class="tools__item">
-          </li>
-        </ul>
-        <ul class="posting__tools tools-control">
-          <li class="tools-control__item">
-            <button class="button button--post" type="button">
-              Запостить
-            </button>
-          </li>
-          <li class="tools-control__item">
-            <button class="button button--cancel" type="button">
-              Отмена
-            </button>
-          </li>
-        </ul>
+        <picture>
+          <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
+          <img class="posting__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="publication-photo">
+        </picture>
+        <div class="tools__wrapper">
+          <ul class="posting___tools tools">
+            <li class="tools__item">
+            </li>
+            <li class="tools__item">
+            </li>
+            <li class="tools__item">
+            </li>
+            <li class="tools__item">
+            </li>
+          </ul>
+          <ul class="posting__tools tools-control">
+            <li class="tools-control__item">
+              <button class="button button--post" type="button">
+                Запостить
+              </button>
+            </li>
+            <li class="tools-control__item">
+              <button class="button button--cancel" type="button">
+                Отмена
+              </button>
+            </li>
+          </ul>
+        </div>
         </div>
       </section>
     </main>

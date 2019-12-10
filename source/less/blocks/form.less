@@ -239,6 +239,7 @@
       display: flex;
       justify-content: space-between;
       margin: 50px 20px;
+      margin-top: 80px;
       order: 4;
     }
 
@@ -248,8 +249,14 @@
     }
   }
 
+  .form__required {
+    margin-top: 20px;
+  }
+
   .form__offer {
-    padding: 60px;
+    padding: 90px;
+    padding-bottom: 70px;
+    line-height: 1.7;
     font-size: 18px;
   }
 
@@ -259,13 +266,24 @@
   }
 
   .form__item--name {
-    width: 90%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     order: -1;
+
+    .form__label {
+      padding-left: 15px;
+    }
   }
 
   .form__item--expirience {
     order: 0;
+    margin-bottom: 40px;
     border: 2px solid #e5e5e5;
+
+    .form__label {
+      padding-left: 35px;
+    }
   }
 
   .expirience__item {
@@ -273,21 +291,35 @@
   }
 
   .form__item--name input {
-    width: 70%;
-    margin: 30px 50px;
+    width: 80%;
+    margin: 30px 15px;
   }
 
   .form__item--achives {
     padding: 0;
     border: 2px solid #e5e5e5;
     order: 2;
+
+    .form__label {
+      padding-left: 15px;
+    }
+
+    .achives__item {
+      height: 85px;
+    }
   }
 
   .form__item--contacts {
     margin: 20px;
+    margin-bottom: 5px;
     padding: 20px 60px;
     border: 2px solid #e5e5e5;
     order: 1;
+
+    .form__label--input {
+      order: 1;
+      margin-bottom: 20px;
+    }
 
     legend {
       display: block;
@@ -295,11 +327,12 @@
 
     li {
       position: relative;
+      display: flex;
+      flex-direction: column;
 
       &::before {
         content: "";
         position: absolute;
-        bottom: 0;
         right: 0;
         width: 59px;
         height: 59px;
@@ -319,6 +352,13 @@
   .form__item--feedback {
     border: 2px solid #e5e5e5;
     order: 3;
+
+    textarea {
+      width: 85%;
+      height: 200px;
+      padding: 25px;
+      margin: 15px 0 0 40px;
+    }
   }
 
   .achives__item {

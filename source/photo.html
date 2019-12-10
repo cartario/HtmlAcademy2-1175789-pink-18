@@ -53,22 +53,26 @@
         <div class="gallery__list-wrapper">
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--hit">
-              <img class="gallery__image gallery__image--hit gallery__mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="gallery-image">
-              <img class="gallery__image gallery__image--hit gallery__tablet" src="img/panorama-tablet@1x.jpg">
-              <img class="gallery__image gallery__image--hit gallery__desktop" src="img/panorama-desktop@1x.jpg">
-            <b class="gallery__name">
-              Анна
-            </b>
-            <span class="gallery__time">
-              (5 минут назад)
-            </span>
-            <p class="gallery__description">
-              Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию в перископе, задавайте свои
-            </p>
-            <a class="gallery__link" href="#">
-                <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12" alt="gallery-like">
-                Нравится: 215
-            </a>
+            <picture>
+              <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+              <img class="gallery__image gallery__image--hit" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="gallery-image">
+            </picture>
+            <article class="gallery__article--hit">
+              <b class="gallery__name">
+                  Анна
+              </b>
+              <span class="gallery__time">
+                  (5 минут назад)
+              </span>
+              <p class="gallery__description">
+                  Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию в перископе, задавайте свои
+              </p>
+              <a class="gallery__link" href="#">
+              <img class="gallery__link-like gallery__link-like--off" src="img/like.png" width="13" height="12" alt="gallery-like">
+                    Нравится: 215
+              </a>
+            </article>
           </li>
           <li class="gallery__item">
             <picture>

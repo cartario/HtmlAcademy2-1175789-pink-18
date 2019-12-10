@@ -17,6 +17,7 @@
   &__input {
     width: 100%;
     height: 59px;
+    margin-bottom: 15px;
     padding: 15px;
     font-size: 18px;
     box-sizing: border-box;
@@ -25,19 +26,22 @@
 
   &__label {
     width: 100%;
+    padding-left: 30px;
   }
 }
 
 .form__offer {
   margin: 0;
-  padding: 25px 50px;
+  padding: 50px 20px 25px 20px;
   font-size: 14px;
   text-align: center;
+  line-height: 2;
   color: @color-black;
 }
 
 .form__item--name {
   border: none;
+  padding-bottom: 35px;
 }
 
 .form__item--achives {
@@ -47,11 +51,13 @@
 
 .achives__list {
   .reset-list();
+  padding-top: 30px;
 }
 
 .form__item--contacts {
   .reset-list();
   margin: 20px;
+  padding-top: 30px;
   line-height: 40px;
   border: none;
 
@@ -78,13 +84,18 @@
 
 .expirience__list {
   .reset-list();
+  padding-top: 40px;
 }
 
 .expirience__item {
   position: relative;
+  height: 75px;
   margin-left: 15px;
-  padding: 35px;
   font-size: 18px;
+
+  .form__label {
+    padding-left: 55px;
+  }
 }
 
 .form__label--radio {
@@ -93,8 +104,8 @@
   &::before {
     content: "";
     position: absolute;
+    top: -5px;
     left: 0;
-    bottom: 30%;
     width: 35px;
     height: 35px;
     border: 2px solid #e5e5e5;
@@ -106,7 +117,7 @@
     content: "";
     position: absolute;
     left: 12px;
-    bottom: 44%;
+    top: 7px;
     width: 10px;
     height: 10px;
     border: 2px solid @color-pink;
@@ -125,7 +136,8 @@
 
 .achives__item {
   position: relative;
-  padding: 30px 20px 30px 60px;
+  height: 80px;
+  padding-left: 45px;
 }
 
 .form__label--checkbox {
@@ -149,7 +161,6 @@
     content: "";
     position: absolute;
     left: 10px;
-    bottom: 48%;
     width: 20px;
     height: 10px;
     border-left: 3px solid @color-pink;
@@ -185,6 +196,7 @@
 
 .form__required {
   margin: -1px;
+  margin-top: 50px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -197,11 +209,14 @@
 }
 
 .form__item--feedback {
+  margin: 25px 0;
   border: none;
 
   textarea {
-    width: 95%;
+    width: 100%;
     height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
     font-size: 18px;
     font-family: "OpenSans-light", "Arial", sans-serif;
   }

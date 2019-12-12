@@ -22,6 +22,15 @@
     font-size: 18px;
     box-sizing: border-box;
     border: solid 2px #e5e5e5;
+
+    &:hover {
+      border-color: black;
+    }
+
+    &:focus {
+      border-color: @color-pink;
+      outline: none;
+    }
   }
 
   &__label {
@@ -100,30 +109,42 @@
 
 .form__label--radio {
   margin-left: 20px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 35px;
-    height: 35px;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    background-color: white;
-  }
+.form__radio + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: white;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 7px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid @color-pink;
-    border-radius: 50%;
-    background-color: @color-pink;
-  }
+.form__radio:hover + label::before {
+  border-color: black;
+}
+
+.form__radio:checked:hover + label::before {
+  border-color: black;
+}
+
+.form__radio:checked + label::before {
+  border-color: @color-pink;
+}
+
+.form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @color-pink;
+  border-radius: 50%;
+  background-color: @color-pink;
 }
 
 .form__item--name .form__label,
@@ -146,27 +167,39 @@
   text-align: left;
   font-weight: bold;
   color: @color-black;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 35px;
-    height: 35px;
-    border: 2px solid #e5e5e5;
-    background-color: white;
-  }
+.form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 20px;
-    height: 10px;
-    border-left: 3px solid @color-pink;
-    border-bottom: 3px solid @color-pink;
-    transform: rotate(-45deg);
-  }
+.form__checkbox:hover + label::before {
+  border-color: black;
+}
+
+.form__checkbox:checked:hover + label::before {
+  border-color: black;
+}
+
+.form__checkbox:checked + label::before {
+  border-color: @color-pink;
+}
+
+.form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 10px;
+  border-left: 3px solid @color-pink;
+  border-bottom: 3px solid @color-pink;
+  transform: rotate(-45deg);
 }
 
 .form__label--input {
@@ -219,6 +252,15 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: "OpenSans-light", "Arial", sans-serif;
+
+    &:hover {
+      border: 2px solid black;
+    }
+
+    &:focus {
+      border-color: @color-pink;
+      outline: none;
+    }
   }
 }
 

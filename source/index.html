@@ -9,10 +9,11 @@
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
+
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
           <ul class="site-logo">
             <li class="site-logo__item">
               <a class="page-header__logo" href="index.html">
@@ -45,20 +46,21 @@
         <img class="bg__img" src="img/iphone-hand-mobile@1x.png">
       </div>
       <section class="download">
-        <h2 class="download__slogan">Взгляните на жизнь иначе</h2>
+
         <div class="download__wrapper">
-          <a class="button button--download" href="https://apple.com">
+          <h2 class="download__slogan">Взгляните на жизнь иначе</h2>
+          <a class="button button--download" href="https://apps.apple.com/ru/genre/mobile-software-applications/id36">
             Скачать приложение
         </a>
           <ul class="download-list">
             <li class="download-list__item">
-              <a href="https://apple.com"><img src="img/apple-logo-svg.png"></a>
+              <a href="https://apps.apple.com/ru/genre/mobile-software-applications/id36"><img src="img/apple-logo-svg.png"></a>
             </li>
             <li class="download-list__item">
-              <a href="https://google.com"><img src="img/android-logo-svg.png"></a>
+              <a href="https://play.google.com/store"><img src="img/android-logo-svg.png"></a>
             </li>
             <li class="download-list__item">
-              <a href="https://microsoft.com"><img src="img/microsoft-logo-svg.png"></a>
+              <a href="https://www.microsoft.com/ru-RU/store/apps"><img src="img/microsoft-logo-svg.png"></a>
             </li>
           </ul>
           <p class="download__description">
@@ -79,14 +81,17 @@
         </header>
           <ul class="advantages-list">
             <li class="advantages-list__item">
+              <img class="advantages-list__img" src="img/iphone-screen-1-desktop@1x.png">
               <b class="advantages-list__slogan">Поднимает настроение</b>
               <p class="advantages-list__intro">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages-list__item">
+              <img class="advantages-list__img" src="img/iphone-screen-2-desktop@1x.png">
               <b class="advantages-list__slogan">Меняет мир вокруг</b>
               <p class="advantages-list__intro">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages-list__item">
+              <img class="advantages-list__img" src="img/iphone-screen-3-desktop@1x.png">
               <b class="advantages-list__slogan">Заводите новых друзей</b>
               <p class="advantages-list__intro">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -101,12 +106,101 @@
           </div>
         </div>
       </section>
-      <section class="feedback">feedback
-        <div class="feedback__wrapper"></div>
-
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__list slider__list">
+            <blockquote class="feedback__item slider__item">
+              <cite class="feedback__author">
+                Николай Петров
+              </cite>
+              <p class="feedback__profession">
+                25 лет, водитель трамвая
+              </p>
+              <p class="feedback__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии"
+              </p>
+            </blockquote>
+            <p class="feedback__toggles slider__toggles">
+              <input class="slider__toggle" type="radio" name="slider__toggle">
+              <input class="slider__toggle" type="radio" name="slider__toggle">
+              <input class="slider__toggle" type="radio" name="slider__toggle">
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="products">products
-        <div class="products__wrapper"></div>
+      <section class="products">
+        <div class="products__wrapper">
+          <h2 class="visually-hidden">Тарифы</h2>
+        <div class="products__list slider__list">
+          <table class="products__item slider__item">
+            <tr>
+              <td class="products__value">
+                <div>
+                  <p class="products__name"></p>
+                  <p class="products__price"></p>
+                </div>
+              </td>
+              <td class="products__value">
+                <div>
+                  <p class="products__name">База</p>
+                  <p class="products__price">1,99usd</p>
+                </div>
+              </td>
+              <td class="products__value">
+                <div>
+                  <p class="products__name">Стандарт</p>
+                  <p class="products__price">3,99usd</p>
+                </div>
+              </td>
+              <td class="products__value">
+                <div>
+                  <p class="products__name">Анлим</p>
+                  <p class="products__price">9,99usd</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="products__value">
+                <p class="products__text">Розовый фильтр</p>
+              </td>
+              <td class="products__text--yes">
+              </td>
+              <td class="products__text--yes">
+              </td>
+              <td class="products__text--yes">
+              </td>
+            </tr>
+            <tr>
+              <td class="products__value">
+                <p class="products__text">Смайлики</p>
+              </td>
+              <td class="products__text--no">
+              </td>
+              <td class="products__text--yes">
+              </td>
+              <td class="products__text--yes">
+              </td>
+            </tr>
+            <tr >
+              <td class="products__value">
+                <p class="products__text">Комментарии</p>
+              </td>
+              <td class="products__text--no">
+              </td>
+              <td class="products__text--no">
+              </td>
+              <td class="products__text--yes">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="products__toggles slider__toggles">
+          <input class="slider__toggle" type="radio" name="slider__name">
+          <input class="slider__toggle" type="radio" name="slider__name">
+          <input class="slider__toggle" type="radio" name="slider__name">
+        </p>
+      </div>
+        </div>
 
       </section>
       <section class="contacts">
@@ -115,16 +209,17 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <b>Звоните:</b>
-              <p class="contacts__text">+7125556666</p>
-            </li>
-            <li class="contacts__item">
-              <b>Пишите:</b>
-              <p class="contacts__text">mail@htmlacademy.ru</p>
+              <p class="contacts__text">+7-(812)-555-66-66</p>
             </li>
             <li class="contacts__item">
               <b>Приезжайте в гости</b>
               <p class="contacts__text">ул.Большая Конюшенная, 19/8</p>
             </li>
+            <li class="contacts__item">
+              <b>Пишите:</b>
+              <p class="contacts__text">mail@htmlacademy.ru</p>
+            </li>
+
           </ul>
         </div>
       </section>

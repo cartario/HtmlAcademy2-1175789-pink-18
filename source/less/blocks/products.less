@@ -1,0 +1,161 @@
+.products {
+  width: 320px;
+  min-height: 450px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: @color-grey;
+
+  tr {
+    height: 60px;
+  }
+
+  &__list {
+    padding-top: 65px; /*временно*/
+  }
+
+  &__value {
+    width: 25%;
+  }
+
+  &__name {
+    margin-top: 18px;
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__text--yes {
+    width: 31px;
+    height: 21px;
+    background: url("../img/yes-svg.png") no-repeat center center;
+  }
+
+  &__text--no {
+    width: 27px;
+    height: 26px;
+    background: url("../img/no-svg.png") no-repeat center center;
+  }
+
+  &__toggles {
+    margin-top: 35px;
+    text-align: center;
+  }
+}
+
+.products__item {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: white;
+}
+
+.products__item tr {
+  text-align: left;
+  color: @color-black;
+  border: 3px @color-grey solid;
+}
+
+.products__item tr:nth-child(1) {
+  padding: 15px;
+  font-size: 24px;
+  text-align: center;
+  background-color: @color-black;
+  color: white;
+}
+
+.products__item td {
+  border: 3px @color-grey solid;
+}
+
+@media (max-width: 659px) {
+  .products__item td:nth-child(2),
+  .products__item td:nth-child(4) {
+    display: none;
+    background-color: red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products {
+    width: 660px;
+    min-height: auto;
+
+    &__value {
+      width: 150px;
+    }
+
+    &__item {
+      width: auto;
+      margin-left: 19px;
+    }
+
+    &__list {
+      padding-top: 35px;
+      padding-bottom: 70px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__text {
+      padding-left: 10px;
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__price {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    &__toggles {
+      display: none;
+    }
+
+    tr {
+      height: 45px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300px;
+
+    &__item {
+      width: 80%;
+      margin: auto;
+      margin-top: 120px;
+    }
+
+    &__value {
+      height: 60px;
+    }
+
+    &__item tr:nth-child(1) {
+      height: 95px;
+    }
+
+    &__text {
+      padding-left: 25px;
+      font-size: 18px;
+    }
+  }
+}

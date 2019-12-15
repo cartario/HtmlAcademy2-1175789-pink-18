@@ -121,18 +121,34 @@
     position: absolute;
     content: "";
     top: 70%;
-    width: 80px;
+    width: 45%;
     height: 2px;
-    background: @color-pink;
+    background: white;
+  }
+
+  .site-list__item--active:nth-child(2)::after {
+    width: 70%;
+  }
+
+  .site-list__item--active:nth-child(4)::after {
+    width: 85%;
   }
 
   .site-list__item:hover::after {
     position: absolute;
     content: "";
     top: 70%;
-    width: 80px;
+    width: 45%;
     height: 2px;
-    background: white;
+    background: @color-pink;
+  }
+
+  .site-list__item:nth-child(2):hover::after {
+    width: 70%;
+  }
+
+  .site-list__item:nth-child(4):hover::after {
+    width: 85%;
   }
 
   .site-list a {

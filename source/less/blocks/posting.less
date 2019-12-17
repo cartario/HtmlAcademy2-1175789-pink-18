@@ -25,7 +25,7 @@
 
 .posting__tools,
 .tools,
-.tools__mobile {
+.tools-mobile {
   .reset-list();
 }
 
@@ -104,23 +104,23 @@
   padding: 30px 20px;
 }
 
-.tools__mobile {
+.tools-mobile {
   display: flex;
   justify-content: space-around;
   padding: 0 15px;
 }
 
-.tools-mobile-img svg {
+.tools-mobile__img svg {
   fill: @color-black;
   opacity: 0.3;
 }
 
-.tools-mobile-img:hover svg {
+.tools-mobile__img:hover svg {
 
   opacity: 0.5;
 }
 
-.tools-mobile-img--active svg {
+.tools-mobile__img--active svg {
   fill: @color-pink;
   opacity: 1;
 }
@@ -199,7 +199,7 @@
     padding-right: 0;
   }
 
-  .tools__mobile {
+  .tools-mobile {
     display: none;
   }
 

@@ -184,10 +184,11 @@
 
   .posting__text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 18px;
   }
 
-  .tools__wrapper {
+  .tools-wrapper {
     width: 45%;
     padding: 20px;
     box-sizing: border-box;
@@ -237,8 +238,17 @@
 
 @media (min-width: @desktop-width) {
   .posting {
-    width: 960px;
+    width: 100%;
     min-height: 670px;
+  }
+
+  .posting__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .posting__text {
+    width: 100%;
   }
 
   .posting__image {
@@ -246,7 +256,7 @@
     padding-left: 80px;
   }
 
-  .tools__wrapper {
+  .tools-wrapper {
     width: 50%;
   }
 

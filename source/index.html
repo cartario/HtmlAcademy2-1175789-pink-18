@@ -122,11 +122,16 @@
                 "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии"
               </p>
             </blockquote>
-            <p class="feedback__toggles slider__toggles">
-              <input class="slider__toggle" type="radio" name="slider__toggle">
-              <input class="slider__toggle" type="radio" name="slider__toggle">
-              <input class="slider__toggle" type="radio" name="slider__toggle">
-            </p>
+            <div class="slider-container">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-1">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-2">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-3">
+            <div class="slider-controls">
+              <label class="slider-controls__item slider-controls__item--1" for="product-1"></label>
+              <label class="slider-controls__item slider-controls__item--2" for="product-2"></label>
+              <label class="slider-controls-item slider-controls__item--3" for="product-3"></label>
+            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -196,12 +201,16 @@
               </tr>
             </table>
           </div>
-          <div>
-            <p class="products__toggles slider__toggles">
-              <input class="slider__toggle" type="radio" name="slider__name">
-              <input class="slider__toggle" type="radio" name="slider__name">
-              <input class="slider__toggle" type="radio" name="slider__name">
-            </p>
+
+          <div class="slider-container">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-1">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-2">
+            <input class="slider-toggle" type="radio" name="slider__name" id="product-3">
+            <div class="slider-controls">
+              <label class="slider-controls__item slider-controls__item--1" for="product-1"></label>
+              <label class="slider-controls__item slider-controls__item--2" for="product-2"></label>
+              <label class="slider-controls-item slider-controls__item--3" for="product-3"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -221,7 +230,6 @@
               <b>Пишите:</b>
               <p class="contacts__text">mail@htmlacademy.ru</p>
             </li>
-
           </ul>
         </div>
       </section>

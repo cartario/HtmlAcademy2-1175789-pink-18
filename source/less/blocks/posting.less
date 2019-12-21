@@ -25,7 +25,7 @@
 
 .posting__tools,
 .tools,
-.tools__mobile {
+.tools-mobile {
   .reset-list();
 }
 
@@ -104,23 +104,23 @@
   padding: 30px 20px;
 }
 
-.tools__mobile {
+.tools-mobile {
   display: flex;
   justify-content: space-around;
   padding: 0 15px;
 }
 
-.tools-mobile-img svg {
+.tools-mobile__img svg {
   fill: @color-black;
   opacity: 0.3;
 }
 
-.tools-mobile-img:hover svg {
+.tools-mobile__img:hover svg {
 
   opacity: 0.5;
 }
 
-.tools-mobile-img--active svg {
+.tools-mobile__img--active svg {
   fill: @color-pink;
   opacity: 1;
 }
@@ -184,10 +184,11 @@
 
   .posting__text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 18px;
   }
 
-  .tools__wrapper {
+  .tools-wrapper {
     width: 45%;
     padding: 20px;
     box-sizing: border-box;
@@ -199,7 +200,7 @@
     padding-right: 0;
   }
 
-  .tools__mobile {
+  .tools-mobile {
     display: none;
   }
 
@@ -237,8 +238,17 @@
 
 @media (min-width: @desktop-width) {
   .posting {
-    width: 960px;
+    width: 100%;
     min-height: 670px;
+  }
+
+  .posting__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .posting__text {
+    width: 100%;
   }
 
   .posting__image {
@@ -246,7 +256,7 @@
     padding-left: 80px;
   }
 
-  .tools__wrapper {
+  .tools-wrapper {
     width: 50%;
   }
 

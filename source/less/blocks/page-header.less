@@ -5,6 +5,11 @@
   margin: 0 auto;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
 
+  @media (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 0;
+    background-size: auto 100%;
+  }
+
   &__slogan {
     margin: 0;
     padding: 20px 20px;
@@ -13,14 +18,15 @@
   }
 }
 
-.bg__img {
+.bg-mock__img {
   position: absolute;
   bottom: 0;
 }
 
 .bg-mock--inner {
   min-height: 170px;
-  background-position: 50% 20%;
+  background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 20%;
+  background-size: 100%;
 }
 
 .bg-mock__text {

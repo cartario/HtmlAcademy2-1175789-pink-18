@@ -187,18 +187,23 @@
   border-color: black;
 }
 
-.form__checkbox:checked + label::before {
+.form__checkbox:checked:active + label::before {
+  border-color: @color-pink;
+}
+
+.form__checkbox:active + label::before {
   border-color: @color-pink;
 }
 
 .form__checkbox:checked + label::after {
   content: "";
   position: absolute;
+  top: 10px;
   left: 10px;
   width: 20px;
   height: 10px;
-  border-left: 3px solid @color-pink;
-  border-bottom: 3px solid @color-pink;
+  border-left: 2px solid @color-pink;
+  border-bottom: 2px solid @color-pink;
   transform: rotate(-45deg);
 }
 
@@ -414,7 +419,7 @@
   }
 
   .achives__item {
-    margin-left: 60px;
+    margin-left: 70px;
   }
 }
 

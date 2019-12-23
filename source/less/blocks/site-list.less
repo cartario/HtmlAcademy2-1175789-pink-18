@@ -1,0 +1,83 @@
+.site-list {
+  .reset-list ();
+
+  a {
+    display: block;
+    padding: 25px;
+    font-size: 18px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+  }
+
+  a[href] {
+    &:hover {
+      color: @color-pink;
+    }
+
+    &:active {
+      color: @color-pink;
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 650px;
+
+    &__item {
+      position: relative;
+      min-width: 150px;
+    }
+
+    a {
+      padding: 48px 0;
+      font-weight: normal;
+      text-transform: none;
+      text-align: left;
+      border-bottom: none;
+    }
+  }
+
+  .site-list__item--active::after {
+    position: absolute;
+    content: "";
+    top: 70%;
+    width: 45%;
+    height: 2px;
+    background: white;
+  }
+
+  .site-list__item--active:nth-child(2)::after {
+    width: 70%;
+  }
+
+  .site-list__item--active:nth-child(4)::after {
+    width: 85%;
+  }
+
+  .site-list__item:hover::after {
+    position: absolute;
+    content: "";
+    top: 70%;
+    width: 45%;
+    height: 2px;
+    background: @color-pink;
+  }
+
+  .site-list__item:nth-child(2):hover::after {
+    width: 70%;
+  }
+
+  .site-list__item:nth-child(4):hover::after {
+    width: 85%;
+  }
+}

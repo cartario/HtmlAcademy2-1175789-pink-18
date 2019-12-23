@@ -1,15 +1,10 @@
-.copyright__text {
-  text-align: left;
-}
-
 .footer {
   width: 100%;
   margin: 0 auto;
   background-color: white;
 }
 
-.footer__logo,
-.social__list {
+.footer__logo {
   .reset-list();
 }
 
@@ -34,41 +29,6 @@
   }
 }
 
-.social__list {
-  display: flex;
-  width: 180px;
-  min-height: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social__item {
-  position: relative;
-  width: 46px;
-  height: 46px;
-  border: 3px solid @color-grey;
-  border-radius: 50%;
-
-  svg {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-
-  path {
-    fill: @color-pink;
-  }
-
-  &:hover {
-    border: 3px solid @color-black;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .footer--none {
   display: none;
 }
@@ -85,10 +45,6 @@
 
   .footer__wrapper {
     flex-direction: row;
-  }
-
-  .bg-mock-photo1 {
-    min-height: 670px;
   }
 }
 

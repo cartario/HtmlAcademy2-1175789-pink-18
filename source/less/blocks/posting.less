@@ -24,80 +24,8 @@
 }
 
 .posting__tools,
-.tools,
 .tools-mobile {
   .reset-list();
-}
-
-.tools {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-  padding-bottom: 0;
-}
-
-.tools__item {
-  position: relative;
-  height: 70px;
-  border-bottom: 1px solid lightgrey;
-}
-
-.tools__item::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.tools__crop::before {
-  background: url("../img/icon-editor-crop.svg") 50% 50% no-repeat;
-  background-size: 16px;
-}
-
-.tools__fill::before {
-  background: url("../img/icon-editor-fill.svg") 50% 50% no-repeat;
-  background-size: 16px;
-}
-
-.tools__contrast::before {
-  background: url("../img/icon-editor-contrast.svg") 50% 70% no-repeat;
-  background-size: 16px;
-}
-
-.tools__scale {
-  width: 240px;
-  margin: 30px auto;
-  height: 2px;
-  background-color: black;
-}
-
-.tools__scale::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid @color-pink;
-  background-color: @color-grey;
-}
-
-.tools__scale:hover::before {
-  background-color: @color-pink;
-}
-
-.tools__scale--crop::before {
-  left: 80%;
-}
-
-.tools__fill,
-.tools__contrast {
-  display: none;
 }
 
 .tools-control {
@@ -162,10 +90,6 @@
   }
 }
 
-.tools__item:hover::before {
-  opacity: 0.5;
-}
-
 @media (min-width: @tablet-width) {
   .posting {
     width: 660px;
@@ -194,40 +118,8 @@
     box-sizing: border-box;
   }
 
-  .tools {
-    display: flex;
-    flex-direction: column;
-    padding-right: 0;
-  }
-
   .tools-mobile {
     display: none;
-  }
-
-  .tools__fill,
-  .tools__contrast {
-    display: block;
-  }
-
-  .tools__item::before {
-    display: block;
-  }
-
-  .tools__scale {
-    width: 200px;
-    margin-right: 0;
-  }
-
-  .tools__scale--crop::before {
-    left: 20%;
-  }
-
-  .tools__scale--fill::before {
-    left: 80%;
-  }
-
-  .tools__scale--contrast::before {
-    left: 60%;
   }
 
   .tools-control {
@@ -260,19 +152,6 @@
     width: 50%;
   }
 
-  .tools {
-    margin-bottom: 100px;
-    padding-top: 40px;
-  }
-
-  .tools__item {
-    width: 90%;
-
-    &::before {
-      left: -30px;
-    }
-  }
-
   .tools-control {
     display: flex;
     justify-content: space-between;
@@ -281,23 +160,5 @@
 
   .tools-control__item {
     width: 190px;
-  }
-
-  .tools__scale {
-    width: 290px;
-  }
-
-  .tools__crop::before {
-    background-size: 48px;
-  }
-
-  .tools__fill::before {
-    background-size: 46px;
-    background-position: 50% 100%;
-  }
-
-  .tools__contrast::before {
-    background-position: 50% 100%;
-    background-size: 40px;
   }
 }

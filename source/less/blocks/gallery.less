@@ -102,6 +102,20 @@
   }
 }
 
+.gallery__hit-wrapper {
+  position: relative;
+}
+
+.gallery__hit::before {
+  content: "панорама дня";
+  position: absolute;
+  right: 15px;
+  padding: 5px 15px 5px 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: @color-pink;
+}
+
 @media (min-width: @tablet-width) {
   .gallery {
     width: 660px;
@@ -132,6 +146,10 @@
   .gallery__list {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .gallery__hit::before {
+    top: 50px;
   }
 }
 
@@ -173,5 +191,9 @@
 
   .gallery__article--hit {
     display: flex;
+  }
+
+  .gallery__hit::before {
+    right: 100px;
   }
 }

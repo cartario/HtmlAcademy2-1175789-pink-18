@@ -67,6 +67,7 @@
 
 @media (min-width: @desktop-width) {
   .feedback {
+    position: relative;
     width: 100%;
     padding-bottom: 35px;
 
@@ -86,6 +87,65 @@
 
     &__toggles {
       display: none;
+    }
+  }
+
+  .feedback__controls {
+
+    .outline1();
+  }
+
+  .feedback__controls-left {
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    width: 22px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .feedback__controls-right {
+    position: absolute;
+    top: 50%;
+    right: 130px;
+    width: 22px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .feedback__controls-quote {
+    position: absolute;
+    top: 30px;
+    right: 445px;
+    width: 79px;
+    height: 65px;
+    background: url("../img/icon-quotes.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }

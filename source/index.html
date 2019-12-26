@@ -46,7 +46,11 @@
       </nav>
       <div class="bg-mock">
         <p class="bg-mock__slogan">Взгляните на жизнь иначе</p>
-          <img class="bg-mock__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone-hand-mobile">
+          <picture>
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+            <img class="bg-mock__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone-hand-mobile">
+          </picture>
+
       </div>
       <section class="download">
         <div class="download__wrapper">
@@ -68,7 +72,10 @@
           <p class="download__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
+        <picture>
+          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
         <img class="download__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="iphone-hand-mobile">
+        </picture>
         </div>
       </section>
     </header>
@@ -83,22 +90,33 @@
         </header>
           <ul class="advantages-list">
             <li class="advantages-list__item">
-              <img class="advantages-list__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="iphone-screen-1-desktop">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <img class="advantages-list__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="iphone-screen-1-desktop">
+              </picture>
               <b class="advantages-list__slogan">Поднимает настроение</b>
               <p class="advantages-list__intro">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages-list__item">
-              <img class="advantages-list__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="iphone-screen-2-desktop">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <img class="advantages-list__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="iphone-screen-2-desktop">
+              </picture>
               <b class="advantages-list__slogan">Меняет мир вокруг</b>
               <p class="advantages-list__intro">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages-list__item">
-              <img class="advantages-list__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="iphone-screen-3-desktop">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <img class="advantages-list__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="iphone-screen-3-desktop">
+              </picture>
               <b class="advantages-list__slogan">Заводите новых друзей</b>
               <p class="advantages-list__intro">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="iphone-screen-mobile">
           </picture>

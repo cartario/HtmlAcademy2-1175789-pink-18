@@ -28,8 +28,29 @@
   }
 }
 
+.logo-footer-desktop {
+  display: none;
+}
+
 .footer--none {
   display: none;
+}
+
+.logo-footer__image {
+  width: 150px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.logo-footer__image-letters path {
+  &:hover {
+    fill: @color-pink;
+  }
+
+  &:active {
+    fill: @color-black;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -56,5 +77,13 @@
     width: 960px;
     margin: 0 auto;
     padding: 60px 0 60px 0;
+  }
+
+  .logo-footer-mobile {
+    display: none;
+  }
+
+  .logo-footer-desktop {
+    display: block;
   }
 }

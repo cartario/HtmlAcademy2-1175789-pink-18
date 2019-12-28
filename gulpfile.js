@@ -12,6 +12,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var del = require("del");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
@@ -45,7 +46,7 @@ gulp.task("server", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
@@ -53,6 +54,10 @@ gulp.task("copy", function () {
       base: "source"
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function (){
+  return del("build");
 });
 
 gulp.task("start", gulp.series("css", "server"));

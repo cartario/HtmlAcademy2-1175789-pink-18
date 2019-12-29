@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
@@ -17,13 +20,13 @@
             <li class="site-logo__item">
               <a class="page-header__logo" href="index.html">
                 <svg class="page-header__logo-pink-white-desktop" width="160" height="40">
-                  <use xlink:href="img/sprite.svg#logo-desktop"></use>
+                  <use xlink:href="#logo-pink-white-desktop"></use>
                 </svg>
                 <svg class="page-header__logo-pink-white-tablet" width="160" height="40">
-                  <use xlink:href="img/sprite.svg#logo-tablet"></use>
+                  <use xlink:href="#logo-pink-white-tablet"></use>
                 </svg>
                 <svg class="page-header__logo-pink-white-mobile" width="80" height="30">
-                  <use xlink:href="img/sprite.svg#logo-mobile"></use>
+                  <use xlink:href="#logo-pink-white-mobile"></use>
                 </svg>
               </a>
             </li>

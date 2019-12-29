@@ -2,6 +2,7 @@
   width: 320px;
   min-height: 450px;
   margin: 0 auto;
+  padding-bottom: 15px;
   text-transform: uppercase;
   background-color: @color-grey;
 
@@ -10,7 +11,7 @@
   }
 
   &__list {
-    padding-top: 65px; /*временно*/
+    padding-top: 90px; /*временно*/
     overflow: hidden;
   }
 
@@ -78,6 +79,20 @@
   border: 3px @color-grey solid;
 }
 
+.products__value--hit {
+  position: relative;
+  background: url("../img/bg-hit.svg") no-repeat;
+
+  &::before {
+    content: "хит";
+    position: absolute;
+    font-size: 14px;
+    left: 15px;
+    top: 15px;
+    transform: rotate(-45deg);
+  }
+}
+
 @media (max-width: 659px) {
   tr:nth-child(2) td:nth-child(3),
   tr:nth-child(3) td:nth-child(3),
@@ -109,6 +124,10 @@
   }
 }
 
+.products__value--1 {
+  background-color: @color-grey;
+}
+
 @media (min-width: @tablet-width) {
   .products {
     width: 660px;
@@ -129,8 +148,8 @@
     }
 
     &__list {
-      padding-top: 35px;
-      padding-bottom: 70px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     &__name {
@@ -150,6 +169,16 @@
 
     tr {
       height: 45px;
+    }
+  }
+
+  .products__value--hit {
+    position: relative;
+    background: url("../img/bg-hit-tablet.svg") no-repeat;
+
+    &::before {
+      left: 10px;
+      top: 10px;
     }
   }
 }
@@ -178,5 +207,9 @@
       padding-left: 25px;
       font-size: 18px;
     }
+  }
+
+  .products__list {
+    padding-top: 30px;
   }
 }

@@ -1,12 +1,15 @@
 .feedback {
   width: 320px;
   margin: 0 auto;
+  margin-top: -20px;
   padding: 15px;
+  padding-bottom: 5px;
   box-sizing: border-box;
   font-size: 18px;
   text-align: center;
   color: @color-black;
   background-color: white;
+
 
   &__author {
     font-weight: bold;
@@ -19,8 +22,9 @@
 
   &__text {
     margin: 5px;
+    margin-top: 15px;
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 2.18;
     font-weight: bold;
   }
 
@@ -46,7 +50,7 @@
 
     &__text {
       margin: 0;
-      margin-top: 100px;
+      margin-top: 95px;
       font-size: 18px;
       line-height: 1.7;
       order: 1;
@@ -67,11 +71,13 @@
 
 @media (min-width: @desktop-width) {
   .feedback {
+    position: relative;
     width: 100%;
     padding-bottom: 35px;
 
     &__text {
       padding: 5% 18% 0 18%;
+      padding-top: 6%;
       text-align: center;
     }
 
@@ -86,6 +92,60 @@
 
     &__toggles {
       display: none;
+    }
+  }
+
+  .feedback__controls-left {
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    width: 22px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .feedback__controls-right {
+    position: absolute;
+    top: 50%;
+    right: 130px;
+    width: 22px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .feedback__controls-quote {
+    position: absolute;
+    top: 70px;
+    right: 46%;
+    width: 79px;
+    height: 65px;
+    background: url("../img/icon-quotes.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }

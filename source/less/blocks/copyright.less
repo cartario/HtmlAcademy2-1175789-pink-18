@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 30px;
   font-size: 14px;
   color: @color-black;
 
@@ -26,5 +27,19 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-right: 35px;
+  }
+
+  .copyright a {
+    margin-left: 15px;
   }
 }

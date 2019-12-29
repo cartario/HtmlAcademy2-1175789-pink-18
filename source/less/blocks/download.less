@@ -1,6 +1,7 @@
 .download {
   width: 320px;
   padding: 20px;
+  padding-bottom: 30px;
   box-sizing: border-box;
   margin: 0 auto;
   color: white;
@@ -20,16 +21,16 @@
   display: flex;
   justify-content: space-between;
   width: 230px;
+  height: 55px;
   margin: 30px auto;
-
-  img {
-    height: 100%;
-  }
+  margin-top: 35px;
+  margin-bottom: 21px;
 }
 
 .download-list__item {
   min-width: 60px;
   min-height: 60px;
+  padding-left: 5px;
 }
 
 .download__description {
@@ -38,10 +39,9 @@
   margin: 0 auto;
   font-size: 14px;
   text-align: center;
-  line-height: 1.71;
+  line-height: 1.72;
   font-weight: 300;
 }
-
 
 .download a {
   color: white;
@@ -59,8 +59,9 @@
 }
 
 .button--download {
+  margin-top: 7px;
   padding: 12px 0;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   background-color: @color-blue;
@@ -74,6 +75,25 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
+}
+
+.download-list__image-apple {
+  width: 60px;
+  height: 55px;
+}
+
+.download-list__image-android {
+  width: 43px;
+  height: 50px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.download-list__image-microsoft {
+  width: 44px;
+  height: 54px;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 @media (min-width: @tablet-width) {
@@ -134,7 +154,7 @@
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat 80% 200px, url("../img/bg-back-desktop@1x.jpg") 50% 50% no-repeat;
 
     @media (min-resolution: @retina-dppx) {
-      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 80% 100px, url("../img/bg-back-desktop@2x.jpg") 50% 50% no-repeat;
+      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 90px 100px, url("../img/bg-back-desktop@2x.jpg") 50% 50% no-repeat;
       background-size: auto 100%;
     }
 
@@ -167,5 +187,7 @@
   .button {
     width: 300px;
     margin: 0;
+    margin-top: 50px;
+    margin-left: 20px;
   }
 }

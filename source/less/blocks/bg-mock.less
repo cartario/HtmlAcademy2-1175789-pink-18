@@ -1,0 +1,81 @@
+.bg-mock {
+  position: relative;
+  width: 320px;
+  min-height: 395px;
+  margin: 0 auto;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+
+  @media (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% -70px;
+    background-size: 100% 120%;
+  }
+
+  &__slogan {
+    margin: 0;
+    padding: 20px 20px;
+    padding-top: 23px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.bg-mock__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.bg-mock--inner {
+  min-height: 170px;
+  background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 20%;
+  background-size: 100%;
+}
+
+.bg-mock__text {
+  margin: 0;
+  padding: 25px;
+  padding-top: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .bg-mock {
+    display: none;
+  }
+
+  .bg-mock--inner {
+    display: block;
+    width: 660px;
+    min-height: 330px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+  }
+
+  .bg-mock__text {
+    padding-top: 85px;
+    line-height: 1.2;
+    font-size: 50px;
+  }
+
+  .bg-mock__text--form {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bg-mock {
+    width: 100%;
+    min-height: 610px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+  }
+
+  .bg-mock__text {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bg-mock--inner {
+    min-height: 285px;
+  }
+}

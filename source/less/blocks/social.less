@@ -1,0 +1,41 @@
+.social__list {
+  .reset-list();
+  display: flex;
+  width: 180px;
+  min-height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border: 3px solid @color-grey;
+  border-radius: 50%;
+
+  svg {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  path {
+    fill: @color-pink;
+  }
+
+  &:hover {
+    border: 3px solid @color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-right: 10px;
+  }
+}

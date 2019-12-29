@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 150px;
   padding-top: 30px;
   font-size: 14px;
   color: @color-black;
@@ -34,12 +35,25 @@
   text-align: left;
 }
 
+@media (max-width: 659px) {
+  .copyright {
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
     margin-right: 35px;
+    padding-top: 18px;
   }
 
   .copyright a {
     margin-left: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding-bottom: 30px;
   }
 }

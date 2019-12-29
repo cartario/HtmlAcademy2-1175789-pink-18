@@ -24,12 +24,11 @@
     border: solid 2px #e5e5e5;
 
     &:hover {
-      border-color: black;
+      outline: 1px solid black;
     }
 
     &:focus {
-      border-color: @color-pink;
-      outline: none;
+      outline: 1px solid @color-pink;
     }
   }
 
@@ -267,7 +266,7 @@
     font-family: "OpenSans-light", "Arial", sans-serif;
 
     &:hover {
-      border: 2px solid black;
+      border: 1px solid black;
     }
 
     &:focus {
@@ -393,9 +392,10 @@
       &::before {
         content: "";
         position: absolute;
-        right: 0;
-        width: 59px;
-        height: 59px;
+        right: 2px;
+        top: 2px;
+        width: 55px;
+        height: 55px;
         background-color: #e5e5e5;
         background-image: url("../img/icon-phone.svg");
         background-repeat: no-repeat;
